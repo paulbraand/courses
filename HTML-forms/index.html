@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <meta name="description" content="Clase de programación para hacer formularios">
+</head>
+<body>
+    <form action="">
+        <label for="mail-user">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" id="mail-user" name="mail-user" placeholder="example@correo.com" autocomplete="email" required>
+        </label>
+        <label for="pass-user">
+            <span>¿Cuándo terminas clases?</span>
+            <input type="password" id="pass-user" name="pass-user" autocomplete="current-password" required>
+        </label>
+        <label for="calendar">
+            <span>¿cuándo inicias clases?</span>
+            <input type="datetime-local" id="calendar" name="calendar" required>
+        </label>
+        <label for="datalist">
+            <span>¿En cuál sede vas a estudiar?</span>
+            <input list="sedes-u">
+            <datalist id="sedes-u">
+                <option value="Chapinero"></option>
+                <option value="Cedritos"></option>
+                <option value="Suba"></option>
+                <option value="Madelena"></option>    
+            </datalist>
+        </label>    
+        <input type="submit"/>        
+    </form>
+</body>
+</html>
